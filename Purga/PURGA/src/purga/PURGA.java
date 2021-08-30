@@ -7,6 +7,7 @@ package purga;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import static purga.Lista.entrada;
 /**
  *
  * @author J.A.Z.F.
@@ -24,7 +25,7 @@ static Scanner entrada = new Scanner(System.in);
         
         int opcion = 1;
         while(opcion > 0 && opcion < 7){
-            opcion = edit.menu();
+            opcion = menu();
             switch(opcion){
                 case 1:{
                     lista1 = edit.getMeterE();       
@@ -35,7 +36,7 @@ static Scanner entrada = new Scanner(System.in);
                 }
                 break;
                 case 3:{
-                    lista1 = edit.Purga(lista1);
+                    //lista1 = edit.Purga(lista1);
                 }
                 break;
                 case 4:{
@@ -62,12 +63,14 @@ static Scanner entrada = new Scanner(System.in);
                     lista1.add('s');
                     lista1.add('t');
                     lista1.add('#');
-                    //lista1.add('@');
+                    lista1.add('@');
                     System.out.println("1) Lista inicio\n");
                     edit.imprimir(lista1);
                     lista1 = edit.EDITA(lista1);
                     System.out.println("\n\n2) Lista final");
                     edit.imprimir(lista1);
+                    
+                    
                 }
                 break;
                 case 6:{
@@ -86,4 +89,21 @@ static Scanner entrada = new Scanner(System.in);
             }
         }
     }
+    
+    public static int menu() {
+        int opcion = 0;
+        System.out.println("====MENU====");
+        System.out.println("1)Anadir a la lista");
+        System.out.println("2)Imprimir lista");
+        System.out.println("3)Purga");
+        System.out.println("4)Editar");
+        System.out.println("5)Emular");
+        System.out.println("6)Vaciar lista");
+        System.out.println("7)Salida");
+        System.out.println("Elija una opcion: ");
+        opcion = entrada.nextInt();
+        return opcion;
+    }
+    
+    
 }

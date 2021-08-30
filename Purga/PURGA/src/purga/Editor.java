@@ -11,8 +11,13 @@ import java.util.ArrayList;
  *
  * @author aleja
  */
-public class Editor extends Lista{
+public class Editor {
+    
     Pila pila = new Pila();
+    
+    public void imprimir(ArrayList lista) {
+        pila.imprimirPila(lista);
+    }
     
     public ArrayList getMeterE(){
         ArrayList lista = new ArrayList<>();        

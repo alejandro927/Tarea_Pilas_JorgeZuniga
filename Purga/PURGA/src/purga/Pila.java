@@ -13,6 +13,15 @@ import java.util.ArrayList;
  */
 public class Pila extends Lista{
     
+    
+    public void imprimirPila(ArrayList lista) {
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.print("[" + lista.get(i) + "]");
+        }
+        System.out.println("");
+    }
+    
+    
     public ArrayList Anula(ArrayList lista) {
         lista.removeAll(lista);
         return lista;
