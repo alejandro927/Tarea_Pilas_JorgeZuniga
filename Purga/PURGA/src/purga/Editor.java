@@ -32,6 +32,7 @@ public class Editor extends Lista{
     }
     
     public ArrayList EDITA(ArrayList lista) {
+        
         for (int i = 0; i < lista.size(); i++) {
             if (lista.get(i).equals('#')) {
                 lista.remove(i);

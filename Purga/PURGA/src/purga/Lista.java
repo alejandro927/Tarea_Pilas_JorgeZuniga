@@ -18,9 +18,6 @@ public class Lista {
 
     public int menu() {
         int opcion = 0;
-        System.out.println("//////////////////////////////");
-        System.out.println("EXAMEN1 ED1 Jorge A. Zuniga F.");
-        System.out.println("//////////////////////////////");
         System.out.println("====MENU====");
         System.out.println("1)Anadir a la lista");
         System.out.println("2)Imprimir lista");

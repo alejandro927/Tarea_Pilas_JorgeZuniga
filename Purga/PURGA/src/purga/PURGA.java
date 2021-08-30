@@ -62,7 +62,7 @@ static Scanner entrada = new Scanner(System.in);
                     lista1.add('s');
                     lista1.add('t');
                     lista1.add('#');
-                    lista1.add('@');
+                    //lista1.add('@');
                     System.out.println("1) Lista inicio\n");
                     edit.imprimir(lista1);
                     lista1 = edit.EDITA(lista1);
